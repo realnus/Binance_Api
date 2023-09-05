@@ -2,16 +2,11 @@ from operator import truediv
 import os
 from binance.client import Client
 import json
+import binance_api_keys
 
-"""
-API Key
-8DF3Q4unckfcOLFS1Rww8i9UysZo8QR4UK0jLSFZrPf4CxSUPxWUIu9KDIr4KEag
-Secret Key
-sl1HJwpFlZYv8XbtYtQTAurAObXpQBZODvKTepCwoBw6UuYKGNmfq65Qs5JGeW9u
-"""
 
-api_key = '8DF3Q4unckfcOLFS1Rww8i9UysZo8QR4UK0jLSFZrPf4CxSUPxWUIu9KDIr4KEag' #os.environ.get('binance_api')
-api_secret = 'sl1HJwpFlZYv8XbtYtQTAurAObXpQBZODvKTepCwoBw6UuYKGNmfq65Qs5JGeW9u' #os.environ.get('binance_secret')
+api_key = binance_api_keys.binance_api_key
+api_secret = binance_api_keys.binance_api_secret
 #api_url = 'https://api3.binance.com'
 
 client = Client(api_key, api_secret)

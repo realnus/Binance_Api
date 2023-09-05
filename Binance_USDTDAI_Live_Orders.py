@@ -3,14 +3,15 @@ from binance.client import Client
 import json
 import time
 from datetime import datetime
+import binance_api_keys
 """
 #Home LOCAL Keys
 api_key = '8DF3Q4unckfcOLFS1Rww8i9UysZo8QR4UK0jLSFZrPf4CxSUPxWUIu9KDIr4KEag' #os.environ.get('binance_api')
 api_secret = 'sl1HJwpFlZYv8XbtYtQTAurAObXpQBZODvKTepCwoBw6UuYKGNmfq65Qs5JGeW9u' #os.environ.get('binance_secret')
 """
 #Mac Local Keys
-api_key = 'l1UyyPWpZpMe35uOaYnTzVyLXuiPIT4Ke2kXr8aZBBZItWVqQJgHtovroHtPqoJE'
-api_secret = 'MscivGWmN0O2k6qJ0JqItcvEiJWydRTbQHa9qAHIEO0fNGJEHDJ1U0BRKz8uE4cL'
+api_key = binance_api_keys.binance_api_key
+api_secret = binance_api_keys.binance_api_secret
 
 
 client = Client(api_key, api_secret)

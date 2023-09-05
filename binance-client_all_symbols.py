@@ -1,10 +1,9 @@
 from binance.client import Client
 import binance_functions
 
-binance_api_key = 'lQazbGSDAbND9XfLM7cFwTQpI9aWwr9VXWf8JIkFyREvWB4jFTd0uGzawT9v5flE'    #Enter your own API-key here
-binance_api_secret = 'd6cN1hjews7Ng6YOHtBDkqnA4L1sY1jpCbgRUi1NlJHQgGViWTdQQAcszDRuckYH' #Enter your own API-secret here
-
-
+import binance_api_keys
+binance_api_key = binance_api_keys.binance_api_key
+binance_api_secret = binance_api_keys.binance_api_secret
 
 a = binance_functions.Binance_getSymbols(binance_api_key,binance_api_secret)
 

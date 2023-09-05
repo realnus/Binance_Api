@@ -8,12 +8,12 @@ from binance.client import Client
 from datetime import timedelta, datetime
 from dateutil import parser
 #from tqdm import tqdm_notebook #(Optional, used for progress-bars)
-
+import binance_api_keys
 ### API
 bitmex_api_key = '[REDACTED]'    #Enter your own API-key here
 bitmex_api_secret = '[REDACTED]' #Enter your own API-secret here
-binance_api_key = 'lQazbGSDAbND9XfLM7cFwTQpI9aWwr9VXWf8JIkFyREvWB4jFTd0uGzawT9v5flE'    #Enter your own API-key here
-binance_api_secret = 'd6cN1hjews7Ng6YOHtBDkqnA4L1sY1jpCbgRUi1NlJHQgGViWTdQQAcszDRuckYH' #Enter your own API-secret here
+binance_api_key = binance_api_keys.binance_api_key
+binance_api_secret = binance_api_keys.binance_api_secret
 
 ### CONSTANTS
 binsizes = {"1m": 1, "5m": 5, "1h": 60, "1d": 1440}

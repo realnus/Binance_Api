@@ -6,6 +6,7 @@ from binance.exceptions import BinanceAPIException, BinanceOrderException
 import json
 import time
 from datetime import datetime
+import binance_api_keys
 
 ##********* In short, the Futures API key pair is available from https://testnet.binancefuture.com/
 
@@ -13,8 +14,8 @@ from datetime import datetime
 #realnus@gmail.com
 #A1234567890!!
 #Futures test api keys
-api_key = '4b53e405154375c6dfe77533b05981233217070994363589567e04b1fe873912'
-api_secret = '4568e4d0c3ecdec334f0ee2588fb41e87d8051a97406a0bc61d92acd72c0eb4b'
+api_key = binance_api_keys.binance_api_key_futures
+api_secret = binance_api_keys.binance_api_secret_futures
 #API Docs :https://binance-docs.github.io/apidocs/futures/en/#change-log
 
 
